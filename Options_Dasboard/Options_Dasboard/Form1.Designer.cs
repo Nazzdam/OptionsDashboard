@@ -30,11 +30,8 @@
         {
             this.HeaderLabel = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnOptionPricing = new System.Windows.Forms.Button();
+            this.btnPayoffProfile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HeaderLabel
@@ -57,57 +54,31 @@
             this.lblDesc.Text = "This dashboard is intended to help users price their options and generate an opti" +
     "on pay off diagram";
             // 
-            // lblUserName
+            // btnOptionPricing
             // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(106, 106);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(73, 16);
-            this.lblUserName.TabIndex = 2;
-            this.lblUserName.Text = "Username:";
+            this.btnOptionPricing.Location = new System.Drawing.Point(106, 116);
+            this.btnOptionPricing.Name = "btnOptionPricing";
+            this.btnOptionPricing.Size = new System.Drawing.Size(167, 60);
+            this.btnOptionPricing.TabIndex = 2;
+            this.btnOptionPricing.Text = "Option pricing";
+            this.btnOptionPricing.UseVisualStyleBackColor = true;
             // 
-            // lblPassword
+            // btnPayoffProfile
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(106, 144);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(70, 16);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Password:";
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Location = new System.Drawing.Point(195, 106);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(100, 22);
-            this.txtUserName.TabIndex = 4;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(195, 144);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 22);
-            this.txtPassword.TabIndex = 5;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(279, 217);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(186, 60);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnPayoffProfile.Location = new System.Drawing.Point(458, 116);
+            this.btnPayoffProfile.Name = "btnPayoffProfile";
+            this.btnPayoffProfile.Size = new System.Drawing.Size(167, 60);
+            this.btnPayoffProfile.TabIndex = 3;
+            this.btnPayoffProfile.Text = "payoff Diagram";
+            this.btnPayoffProfile.UseVisualStyleBackColor = true;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 381);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUserName);
+            this.ClientSize = new System.Drawing.Size(761, 213);
+            this.Controls.Add(this.btnPayoffProfile);
+            this.Controls.Add(this.btnOptionPricing);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.HeaderLabel);
             this.Name = "HomePage";
@@ -121,11 +92,8 @@
 
         private System.Windows.Forms.Label HeaderLabel;
         private System.Windows.Forms.Label lblDesc;
-        private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnOptionPricing;
+        private System.Windows.Forms.Button btnPayoffProfile;
     }
 }
 
