@@ -28,61 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.HeaderLabel = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.optionsPricingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsPayoffProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblDesc = new System.Windows.Forms.Label();
-            this.btnOptionPricing = new System.Windows.Forms.Button();
-            this.btnPayoffProfile = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // HeaderLabel
+            // menuStrip1
             // 
-            this.HeaderLabel.AutoSize = true;
-            this.HeaderLabel.Location = new System.Drawing.Point(276, 9);
-            this.HeaderLabel.Name = "HeaderLabel";
-            this.HeaderLabel.Size = new System.Drawing.Size(209, 16);
-            this.HeaderLabel.TabIndex = 0;
-            this.HeaderLabel.Text = "Welcome to the options dasboard";
-            this.HeaderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionsPricingToolStripMenuItem,
+            this.optionsPayoffProfileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(761, 28);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // optionsPricingToolStripMenuItem
+            // 
+            this.optionsPricingToolStripMenuItem.Name = "optionsPricingToolStripMenuItem";
+            this.optionsPricingToolStripMenuItem.Size = new System.Drawing.Size(124, 24);
+            this.optionsPricingToolStripMenuItem.Text = "Options Pricing";
+            // 
+            // optionsPayoffProfileToolStripMenuItem
+            // 
+            this.optionsPayoffProfileToolStripMenuItem.Name = "optionsPayoffProfileToolStripMenuItem";
+            this.optionsPayoffProfileToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
+            this.optionsPayoffProfileToolStripMenuItem.Text = "Options payoff Profile";
             // 
             // lblDesc
             // 
             this.lblDesc.AutoSize = true;
-            this.lblDesc.Location = new System.Drawing.Point(103, 25);
+            this.lblDesc.Location = new System.Drawing.Point(32, 46);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(594, 16);
-            this.lblDesc.TabIndex = 1;
-            this.lblDesc.Text = "This dashboard is intended to help users price their options and generate an opti" +
-    "on pay off diagram";
-            // 
-            // btnOptionPricing
-            // 
-            this.btnOptionPricing.Location = new System.Drawing.Point(106, 116);
-            this.btnOptionPricing.Name = "btnOptionPricing";
-            this.btnOptionPricing.Size = new System.Drawing.Size(167, 60);
-            this.btnOptionPricing.TabIndex = 2;
-            this.btnOptionPricing.Text = "Option pricing";
-            this.btnOptionPricing.UseVisualStyleBackColor = true;
-            // 
-            // btnPayoffProfile
-            // 
-            this.btnPayoffProfile.Location = new System.Drawing.Point(458, 116);
-            this.btnPayoffProfile.Name = "btnPayoffProfile";
-            this.btnPayoffProfile.Size = new System.Drawing.Size(167, 60);
-            this.btnPayoffProfile.TabIndex = 3;
-            this.btnPayoffProfile.Text = "payoff Diagram";
-            this.btnPayoffProfile.UseVisualStyleBackColor = true;
+            this.lblDesc.Size = new System.Drawing.Size(703, 16);
+            this.lblDesc.TabIndex = 2;
+            this.lblDesc.Text = "Welcome to the options dashboard.This dashboard allows for the pricing on option " +
+    "and to generate the payoff profiles.";
+            this.lblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 213);
-            this.Controls.Add(this.btnPayoffProfile);
-            this.Controls.Add(this.btnOptionPricing);
+            this.ClientSize = new System.Drawing.Size(761, 365);
             this.Controls.Add(this.lblDesc);
-            this.Controls.Add(this.HeaderLabel);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "HomePage";
-            this.Text = "Login page";
+            this.Text = "Home page";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,10 +90,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label HeaderLabel;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem optionsPricingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsPayoffProfileToolStripMenuItem;
         private System.Windows.Forms.Label lblDesc;
-        private System.Windows.Forms.Button btnOptionPricing;
-        private System.Windows.Forms.Button btnPayoffProfile;
     }
 }
 
