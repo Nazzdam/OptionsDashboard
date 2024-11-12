@@ -52,6 +52,7 @@
             this.optionsPricingToolStripMenuItem.Name = "optionsPricingToolStripMenuItem";
             this.optionsPricingToolStripMenuItem.Size = new System.Drawing.Size(124, 24);
             this.optionsPricingToolStripMenuItem.Text = "Options Pricing";
+            this.optionsPricingToolStripMenuItem.Click += new System.EventHandler(this.optionsPricingToolStripMenuItem_Click);
             // 
             // optionsPayoffProfileToolStripMenuItem
             // 
@@ -74,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 365);
+            this.ClientSize = new System.Drawing.Size(761, 423);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;

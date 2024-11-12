@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Options_Dasboard
 {
-    public partial class HomePage : Form
+    public partial class OptionsPricing : Form
     {
-        public HomePage()
+        public OptionsPricing()
         {
             InitializeComponent();
-
-        }
-
-        private void optionsPricingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            OptionsPricing PricingView = new OptionsPricing();
-            PricingView.MdiParent = this;
-            PricingView.Show();
         }
     }
 }
