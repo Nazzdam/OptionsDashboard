@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 
 
 namespace Options_Dasboard
 {
@@ -24,6 +25,40 @@ namespace Options_Dasboard
 
             try
             {
+                excercise = decimal.Parse(txtExe.Text);
+                spot = decimal.Parse(txtSpot.Text);
+                rfr = double.Parse(txtRfr.Text);
+                vol = double.Parse(txtVol.Text);
+                time = int.Parse(txtTime.Text);
+
+                if(decimal.TryParse(txtExe.Text,out excercise)){
+                    if(decimal.TryParse(txtSpot.Text,out spot))
+                    {
+                        if(double.TryParse(txtRfr.Text,out rfr))
+                        {
+                            if (double.TryParse(txtVol.Text,out vol))
+                            {
+                                if(int.TryParse(txtTime.Text,out time))
+                                {
+                                    double d1=()
+                                }
+                                else
+                                {
+                                    lblTimeErr.Text = "Enter the timeas a ratio of 365.";
+                                }
+                            }
+                            else
+                            {
+                                lblVolErr.Text = "Please eneter the volatility as a percentage.";
+                            }
+                        }
+                        else
+                        {
+                            lblRFRerror.Text = "Please enter the rfr as a percetage.";
+                        }
+                    }
+                }
+
                 
             }
             catch (Exception)
