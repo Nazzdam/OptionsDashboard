@@ -38,7 +38,13 @@
             this.txtSpot = new System.Windows.Forms.TextBox();
             this.txtRfr = new System.Windows.Forms.TextBox();
             this.txtTime = new System.Windows.Forms.TextBox();
-            this.btnGeneratePricing = new System.Windows.Forms.Button();
+            this.btnEuroCall = new System.Windows.Forms.Button();
+            this.btnEuroPut = new System.Windows.Forms.Button();
+            this.lblDesc = new System.Windows.Forms.Label();
+            this.lblOutput = new System.Windows.Forms.Label();
+            this.lblVolErr = new System.Windows.Forms.Label();
+            this.lblRFRerror = new System.Windows.Forms.Label();
+            this.lblTimeErr = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblExe
@@ -121,21 +127,83 @@
             this.txtTime.Size = new System.Drawing.Size(100, 22);
             this.txtTime.TabIndex = 9;
             // 
-            // btnGeneratePricing
+            // btnEuroCall
             // 
-            this.btnGeneratePricing.Location = new System.Drawing.Point(339, 192);
-            this.btnGeneratePricing.Name = "btnGeneratePricing";
-            this.btnGeneratePricing.Size = new System.Drawing.Size(107, 62);
-            this.btnGeneratePricing.TabIndex = 10;
-            this.btnGeneratePricing.Text = "Generate Price";
-            this.btnGeneratePricing.UseVisualStyleBackColor = true;
+            this.btnEuroCall.Location = new System.Drawing.Point(316, 195);
+            this.btnEuroCall.Name = "btnEuroCall";
+            this.btnEuroCall.Size = new System.Drawing.Size(107, 62);
+            this.btnEuroCall.TabIndex = 10;
+            this.btnEuroCall.Text = "Generate European call";
+            this.btnEuroCall.UseVisualStyleBackColor = true;
+            this.btnEuroCall.Click += new System.EventHandler(this.btnEuroCall_Click);
+            // 
+            // btnEuroPut
+            // 
+            this.btnEuroPut.Location = new System.Drawing.Point(617, 192);
+            this.btnEuroPut.Name = "btnEuroPut";
+            this.btnEuroPut.Size = new System.Drawing.Size(107, 62);
+            this.btnEuroPut.TabIndex = 11;
+            this.btnEuroPut.Text = "Generate European Put";
+            this.btnEuroPut.UseVisualStyleBackColor = true;
+            // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.Location = new System.Drawing.Point(228, 9);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(410, 16);
+            this.lblDesc.TabIndex = 12;
+            this.lblDesc.Text = "This pricing model makes use of the Black-Scholes preicing method";
+            // 
+            // lblOutput
+            // 
+            this.lblOutput.AutoSize = true;
+            this.lblOutput.Location = new System.Drawing.Point(486, 215);
+            this.lblOutput.Name = "lblOutput";
+            this.lblOutput.Size = new System.Drawing.Size(44, 16);
+            this.lblOutput.TabIndex = 13;
+            this.lblOutput.Text = "label2";
+            // 
+            // lblVolErr
+            // 
+            this.lblVolErr.AutoSize = true;
+            this.lblVolErr.Location = new System.Drawing.Point(313, 106);
+            this.lblVolErr.Name = "lblVolErr";
+            this.lblVolErr.Size = new System.Drawing.Size(53, 16);
+            this.lblVolErr.TabIndex = 14;
+            this.lblVolErr.Text = "volerror";
+            // 
+            // lblRFRerror
+            // 
+            this.lblRFRerror.AutoSize = true;
+            this.lblRFRerror.Location = new System.Drawing.Point(219, 145);
+            this.lblRFRerror.Name = "lblRFRerror";
+            this.lblRFRerror.Size = new System.Drawing.Size(46, 16);
+            this.lblRFRerror.TabIndex = 15;
+            this.lblRFRerror.Text = "rfrerror";
+            // 
+            // lblTimeErr
+            // 
+            this.lblTimeErr.AutoSize = true;
+            this.lblTimeErr.Location = new System.Drawing.Point(183, 178);
+            this.lblTimeErr.Name = "lblTimeErr";
+            this.lblTimeErr.Size = new System.Drawing.Size(52, 16);
+            this.lblTimeErr.TabIndex = 16;
+            this.lblTimeErr.Text = "timerror";
             // 
             // OptionsPricing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 266);
-            this.Controls.Add(this.btnGeneratePricing);
+            this.BackgroundImage = global::Options_Dasboard.Properties.Resources.options1;
+            this.ClientSize = new System.Drawing.Size(800, 269);
+            this.Controls.Add(this.lblTimeErr);
+            this.Controls.Add(this.lblRFRerror);
+            this.Controls.Add(this.lblVolErr);
+            this.Controls.Add(this.lblOutput);
+            this.Controls.Add(this.lblDesc);
+            this.Controls.Add(this.btnEuroPut);
+            this.Controls.Add(this.btnEuroCall);
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.txtRfr);
             this.Controls.Add(this.txtSpot);
@@ -148,6 +216,7 @@
             this.Controls.Add(this.lblExe);
             this.Name = "OptionsPricing";
             this.Text = "OptionsPricing";
+            this.Load += new System.EventHandler(this.OptionsPricing_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,6 +234,12 @@
         private System.Windows.Forms.TextBox txtSpot;
         private System.Windows.Forms.TextBox txtRfr;
         private System.Windows.Forms.TextBox txtTime;
-        private System.Windows.Forms.Button btnGeneratePricing;
+        private System.Windows.Forms.Button btnEuroCall;
+        private System.Windows.Forms.Button btnEuroPut;
+        private System.Windows.Forms.Label lblDesc;
+        private System.Windows.Forms.Label lblOutput;
+        private System.Windows.Forms.Label lblVolErr;
+        private System.Windows.Forms.Label lblRFRerror;
+        private System.Windows.Forms.Label lblTimeErr;
     }
 }
