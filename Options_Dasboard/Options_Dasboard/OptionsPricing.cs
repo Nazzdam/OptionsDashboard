@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using 
+
 
 namespace Options_Dasboard
 {
@@ -40,7 +40,7 @@ namespace Options_Dasboard
                             {
                                 if(int.TryParse(txtTime.Text,out time))
                                 {
-                                    double d1=()
+                                    double d1 =// cmpute formula for calculationg d1 of option. ;
                                 }
                                 else
                                 {
