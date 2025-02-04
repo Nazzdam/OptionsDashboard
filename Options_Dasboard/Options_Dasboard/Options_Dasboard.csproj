@@ -69,6 +69,12 @@
     <Compile Include="OptionsPricing.Designer.cs">
       <DependentUpon>OptionsPricing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Payoff_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payoff_Profile.Designer.cs">
+      <DependentUpon>Payoff_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -76,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OptionsPricing.resx">
       <DependentUpon>OptionsPricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payoff_Profile.resx">
+      <DependentUpon>Payoff_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

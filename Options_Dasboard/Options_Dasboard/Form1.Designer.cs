@@ -59,6 +59,7 @@
             this.optionsPayoffProfileToolStripMenuItem.Name = "optionsPayoffProfileToolStripMenuItem";
             this.optionsPayoffProfileToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
             this.optionsPayoffProfileToolStripMenuItem.Text = "Options payoff Profile";
+            this.optionsPayoffProfileToolStripMenuItem.Click += new System.EventHandler(this.optionsPayoffProfileToolStripMenuItem_Click);
             // 
             // lblDesc
             // 

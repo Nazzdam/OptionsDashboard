@@ -151,9 +151,9 @@
             this.lblDesc.AutoSize = true;
             this.lblDesc.Location = new System.Drawing.Point(228, 9);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(410, 16);
+            this.lblDesc.Size = new System.Drawing.Size(402, 16);
             this.lblDesc.TabIndex = 12;
-            this.lblDesc.Text = "This pricing model makes use of the Black-Scholes preicing method";
+            this.lblDesc.Text = "This pricing model makes use of the Black-Scholes pricing method";
             // 
             // lblOutput
             // 

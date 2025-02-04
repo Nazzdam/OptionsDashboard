@@ -24,5 +24,12 @@ namespace Options_Dasboard
             PricingView.MdiParent = this;
             PricingView.Show();
         }
+
+        private void optionsPayoffProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Payoff_Profile Profiles= new Payoff_Profile();
+            Profiles.MdiParent = this;
+            Profiles.Show();
+        }
     }
 }

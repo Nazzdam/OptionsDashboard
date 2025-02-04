@@ -40,7 +40,7 @@ namespace Options_Dasboard
                             {
                                 if(int.TryParse(txtTime.Text,out time))
                                 {
-                                    double d1 =// cmpute formula for calculationg d1 of option. ;
+                                    double d1 =// cmpute formula for calculationg d1 of option.;
                                 }
                                 else
                                 {
